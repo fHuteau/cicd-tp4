@@ -449,6 +449,45 @@ python monitoring/prometheus_exporter.py
 # Aller sur http://localhost:9090/targets
 ```
 
+#### 2.4 Installer Prometheus sur Windows
+
+Étape 1 : Télécharger Prometheus
+- Aller sur : https://prometheus.io/download/
+- Télécharger Windows → prometheus-*.windows-amd64.zip
+
+Étape 2 : Décompresser
+
+Exemple :
+```text
+C:\monitoring\prometheus\
+```
+
+Étape 3 : Lancer Prometheus
+
+Dans PowerShell :
+```powershell
+cd C:\monitoring\prometheus
+.\prometheus.exe --config.file=prometheus.yml
+```
+
+Accès : http://localhost:9090
+
+#### 2.5 Installer Grafana sur Windows
+
+Étape 1 : Télécharger Grafana
+- https://grafana.com/grafana/download
+- Choisir Windows (Standalone ZIP) 
+
+👉 Installer (.exe) est plus simple pour les étudiants.
+
+Étape 2 : Démarrer Grafana
+
+cd "C:\Program Files\GrafanaLabs\grafana\bin"
+.\grafana-server.exe
+
+Accès : http://localhost:3000
+
+
 ### 🧪 Résultat attendu
 
 ✅ Prometheus et Grafana démarrés avec Docker  
