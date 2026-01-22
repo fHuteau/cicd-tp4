@@ -104,7 +104,7 @@ class TestCalculatorBasic:
         """Ce test échoue intentionnellement pour démontrer les rapports d'échec"""
         result = calc.divide(20, 4)
         # Bug simulé: assertion incorrecte
-        assert result == 6  # Devrait être 5, donc ce test échoue
+        assert result == 5  # Devrait être 5, donc ce test échoue
 
     # Test qui prend du temps (performance)
     @allure.story("Performance")

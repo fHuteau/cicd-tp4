@@ -42,7 +42,7 @@ class TestCalculatorIntegration:
         result = calc.add(5, 3)
         result = calc.multiply(result, 2)
         # Bug simulé: assertion incorrecte
-        assert result == 15  # Devrait être 16, donc échec
+        assert result == 16  # Devrait être 16, donc échec
 
     @allure.story("Performance")
     @allure.title("Test d'intégration rapide")

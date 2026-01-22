@@ -31,7 +31,7 @@ class TestCalculatorStress:
         for i in range(10):
             total = calc.add(total, i)
         # Bug simulé: assertion finale incorrecte
-        assert total == 100  # Devrait être 45, donc échec
+        assert total == 45  # Devrait être 45, donc échec
 
     @allure.story("Performance")
     @allure.title("Performance avec factorielles")

@@ -39,7 +39,7 @@ class TestCalculatorAdvanced:
     def test_power_negative_base_incorrect(self, calc):
         """Ce test échoue - bug dans l'assertion"""
         result = calc.power(-2, 2)
-        assert result == -4  # Devrait être 4, donc échec
+        assert result == 4  # Devrait être 4, donc échec
 
     # Tests de racine carrée - CERTAINS ÉCHOUENT
     @allure.story("Racine carrée")
@@ -98,4 +98,4 @@ class TestCalculatorAdvanced:
         result = calc.factorial(10)
         assert result == 3628800  # Correct, mais testons avec valeur fausse
         # Commentaire: en fait cette assertion est correcte, mais créons un échec
-        assert result == 999999  # Cette assertion échoue
+        # assert result == 999999  # Cette assertion échoue
